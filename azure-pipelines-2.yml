@@ -9,8 +9,17 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
+
 steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
     projects: 'helloworld/helloworld.csproj'
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello Maarten"
