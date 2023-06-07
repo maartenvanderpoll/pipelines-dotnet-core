@@ -18,7 +18,6 @@ stages:
     environment:
       name:  Test
       resourceType: VirtualMachine
-      tags: # Update or remove value to match your tag
   - job: Build
     displayName: Build
     steps:
