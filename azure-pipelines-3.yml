@@ -22,5 +22,5 @@ stages:
     displayName: Build
     steps:
     - script: |
-        echo "new file" > /home/maarten/test.text
+        echo "new file" > /tmp/test.text
       displayName: 'create file'
