@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:  
+  - deployment: VMDeploy
+    displayName: Web deploy
+    environment:
+      name:  Test
+      resourceType: VirtualMachine
+      tags: # Update or remove value to match your tag
+  - job: Build
+    displayName: Build
+    steps:
+    - script: |
+        echo "new file" > /home/maarten/test.text
+      displayName: 'create file'
