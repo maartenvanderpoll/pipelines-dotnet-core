@@ -13,4 +13,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '/helloworld/helloworld.csproj'
+    projects: 'helloworld/helloworld.csproj'
