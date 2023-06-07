@@ -12,5 +12,5 @@ pool:
 steps:
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'run'
+    command: 'build'
     projects: '/helloworld/helloworld.csproj'
