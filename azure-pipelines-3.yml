@@ -23,5 +23,5 @@ stages:
     steps:
     - script: |
         cd /tmp
-        echo "new file" > test.text
+        php -version
       displayName: 'create file'
