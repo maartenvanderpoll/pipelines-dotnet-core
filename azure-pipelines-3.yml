@@ -18,11 +18,14 @@ stages:
     environment:
       name:  Test
       resourceType: VirtualMachine
+    strategy:
+     runOnce:
+        deploy:   
+          steps:
+            - script: php -version
   - job: Build
     displayName: Build
     steps:
     - script: |
         cd /tmp
-        php -version
-        ls
       displayName: 'create file'
