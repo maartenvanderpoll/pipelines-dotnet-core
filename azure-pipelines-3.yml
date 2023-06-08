@@ -22,10 +22,6 @@ stages:
      runOnce:
         deploy:   
           steps:
-            - script: php -version
-  - job: Build
-    displayName: Build
-    steps:
-    - script: |
-        cd /tmp
-      displayName: 'create file'
+            - script:  php -version
+            - script:  echo "hallo" > /tmp/Maarten.hallo
+
