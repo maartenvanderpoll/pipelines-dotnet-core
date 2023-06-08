@@ -24,4 +24,5 @@ stages:
     - script: |
         cd /tmp
         php -version
+        ls
       displayName: 'create file'
